@@ -1,10 +1,9 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mantos Construction Services</title>
+    <title>JS Mantos Construction Services</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -15,6 +14,8 @@
             background-size: cover;
             background-repeat: no-repeat;
             background-attachment: fixed;
+            font-size: 18px;
+            font-weight: bold;
         }
 
         header {
@@ -28,73 +29,106 @@
         header h1 {
             margin: 10px 0;
         }
+
         .hero {
             background: #333;
             color: #fff;
             padding: 50px 20px;
             text-align: center;
         }
+
         .services, .projects, .contact {
             padding: 20px;
             text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
         }
+
         .services h2, .projects h2, .contact h2 {
             margin-bottom: 20px;
+            
         }
+
         .services p, .projects p, .contact p {
             margin-bottom: 10px;
+            font-size: 18px;
+            font-weight: normal;
+            line-height: 1.6;
+            color: #070606;
         }
+
         footer {
             background: #333;
             color: #fff;
             text-align: center;
             padding: 10px;
         }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-weight: bold;
+        }
+
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 1s ease-out forwards;
+        }
+
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
     </style>
-
-<style>
-.fade-in {
-  opacity: 0;
-  transform: translateY(20px);
-  animation: fadeInUp 1s ease-out forwards;
-}
-
-@keyframes fadeInUp {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-</style>
 </head>
 <body>
     <header>
         <img src="logo.png" alt="Mantos Construction Services Logo">
-        <h1>Construction Services</h1>
     </header>
     <section class="hero fade-in">
-        <h2>Welcome to Mantos Construction Services</h2>
-        <p>Your trusted partner in construction and building services.</p>
+        <h2>Welcome to JS Mantos Construction Services</h2>
+        <p>Your partner in design and construction services.</p>
     </section>
     <section class="services fade-in" style="animation-delay: 0.5s;">
-        <h2>Our Services</h2>
-        <p>Residential Construction</p>
-        <p>Commercial Construction</p>
-        <p>Renovation and Remodeling</p>
-        <p>Project Management</p>
+        <h2>VISION</h2>
+        <p>To be the leading construction company known for high-quality construction services, and provide exceptional client satisfaction & expectation.</p>
+    </section>
+    <section class="services fade-in" style="animation-delay: 0.5s;">
+        <h2>MISSION</h2>
+        <p>JS Mantos Construction Services is dedicated to provide high-quality, sustainable, and cost-effective construction services that meet the needs and expectations of our clients.</p>
+    </section>
+    <section class="services fade-in" style="animation-delay: 0.5s;">
+        <h2>ABOUT</h2>
+        <p>JS Mantos Construction Services is a Cebu-based construction company specializing in comprehensive design and construction solutions. It is founded and managed by Architect and Registered Master Plumber Jason R. Mantos. With professional experience in the construction industry since 2012, we provide reliable, well-rounded services to meet every client's unique needs.</p>
     </section>
     <section class="projects fade-in" style="animation-delay: 1s;">
-        <h2>Our Projects</h2>
-        <p>Project 1</p>
-        <p>Project 2</p>
-        <p>Project 3</p>
+        <h2>SERVICES</h2>
+        <p>Architectural and Engineering Design</p>
+        <p>Construction</p>
+        <p>Consultancy</p>
+        <p>Cost Estimates</p>
+        <p>Project Management</p>
+        <p>Site Supervision</p>
     </section>
     <section class="contact fade-in" style="animation-delay: 1.5s;">
-        <h2>Contact Us</h2>
-        <p>Unit 302, Building 13, Phase 2, Urban Deca Homes, Tisa, Cebu City</p>
-        <p>Contact no.: 09153978459</p>
-        <p>Email: jrm.arc@12gmail.com</p>
-    </section>
+    <h2>Contact Us</h2>
+    <p>Unit 302, Building 13, Phase 2, Urban Deca Homes, Tisa, Cebu City</p>
+    <p>Contact no.: 0915-397-8459</p>
+    <p>Email: jrm.arc12@gmail.com</p>
+    <div style="margin-top: 20px;">
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1164.0826643579096!2d123.86390709219118!3d10.307852008631567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a99f54af5b2cd3%3A0xfda678e37cdc8d6!2sUrban%20Deca%20Homes%20Tisa%20Phase%202%20Building13!5e1!3m2!1sen!2sph!4v1748506073935!5m2!1sen!2sph" 
+            width="100%" 
+            height="300" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </div>
+</section>
+
     <footer>
         <p>&copy; 2023 Mantos Construction Services. All rights reserved.</p>
     </footer>
