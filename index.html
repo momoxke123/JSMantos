@@ -89,40 +89,46 @@
    }
  }
  @media (max-width: 600px) {
-   body {
-     font-size: 16px;
-     background-image: url('background.png');
-     background-size: cover;
-     background-repeat: no-repeat;
-     background-attachment: fixed;
-     background-size: 50%;
-   }
-   .hero, .services, .projects, .contact {
-     padding: 15px;
-   }
-   iframe {
-     height: 250px;
-   }
- }
- @media (min-width: 601px) and (max-width: 1024px) {
-   body {
-     font-size: 22px;
-     line-height: 1.2;
-     background-image: url('background.png');
-     background-size: cover;
-     background-repeat: no-repeat;
-     background-attachment: fixed;
-     background-size: 50%;
-   }
-   .hero, .services, .projects, .contact {
-     padding: 25px;
-   }
-   header img {
-     max-width: 90%;
-   }
-   iframe {
-     height: 300px;
-   }
+  body {
+    font-size: 16px;
+    background-image: url('background.png');
+    background-size: 100% auto; /* Makes background image large horizontally */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center top;
+  }
+
+  .hero, .services, .projects, .contact {
+    padding: 15px;
+  }
+
+  iframe {
+    height: 250px;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+  body {
+    font-size: 22px;
+    line-height: 1.2;
+    background-image: url('background.png');
+    background-size: 100% auto; /* Ensures large background on tablets too */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center top;
+  }
+
+  .hero, .services, .projects, .contact {
+    padding: 25px;
+  }
+
+  header img {
+    max-width: 90%;
+  }
+
+  iframe {
+    height: 300px;
+  }
  }
  </style>
 </head>
