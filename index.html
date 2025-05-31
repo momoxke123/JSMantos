@@ -10,7 +10,7 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            background-image: url('background.png'); /* Replace with your image path */
+            background-image: url('background.png');
             background-size: cover;
             background-repeat: no-repeat;
             background-attachment: fixed;
@@ -20,20 +20,11 @@
             font-weight: bold;
         }
 
-         header {
+        header {
             background: #f4f4f4;
             padding: 20px;
             text-align: center;
-        }
-
-        header img {
-            max-width: 1000px;
-            height: auto;
-        }
-
-        .hero {
-            background: #0716f1;
-            color: #ffffff;
+        color: #ffffff;
             padding: 50px 20px;
             text-align: center;
         }
@@ -58,12 +49,38 @@
             color: #000000;
         }
 
+        .project-image {
+            width: 100%;
+            max-width: 600px;
+            border: 4px solid #0716f1;
+            border-radius: 12px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+        }
+
+        .project-image:hover {
+            transform: scale(1.03);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+        }
+
         footer {
             background: #333;
             color: #fff;
             text-align: center;
             font-size: 18px;
             padding: 10px;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        footer img {
+            width: 30px;
+            vertical-align: middle;
+            margin-right: 8px;
         }
 
         h1, h2, h3, h4, h5, h6 {
@@ -83,7 +100,6 @@
             }
         }
 
-        /* Mobile responsiveness */
         @media (max-width: 600px) {
             body {
                 font-size: 16px;
@@ -98,7 +114,6 @@
             }
         }
 
-        /* Tablet responsiveness */
         @media (min-width: 601px) and (max-width: 1024px) {
             body {
                 font-size: 22px;
@@ -140,6 +155,13 @@
         <p>JS Mantos Construction Services is a Cebu-based construction company specializing in comprehensive design and construction solutions. It is founded and managed by Architect and Registered Master Plumber Jason R. Mantos. With professional experience in the construction industry since 2012, we provide reliable, well-rounded services to meet every client's unique needs.</p>
     </section>
     <section class="projects fade-in" style="animation-delay: 1s;">
+        <h2>PROJECTS</h2>
+        <p>Click the image below to view our featured project:</p>
+        <a href="full-project-gallery.html" target="_blank">
+    <img src="project-thumbnail.jpg" alt="Featured Project" class="project-image">
+        </a>
+    </section>
+    <section class="projects fade-in" style="animation-delay: 1s;">
         <h2>SERVICES</h2>
         <p>Architectural and Engineering Design</p>
         <p>Construction</p>
@@ -167,6 +189,11 @@
     </section>
     <footer>
         <p>&copy; 2023 Mantos Construction Services. All rights reserved.</p>
+        <div style="margin-top: 10px;">
+            <a href="https://www.facebook.com/share/1Ekbhnfh1Z/" target="_blank">
+                <img src="facebook-icon.png" alt="Facebook Icon">Follow us on Facebook
+            </a>
+        </div>
     </footer>
 </body>
 </html>
