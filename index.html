@@ -59,7 +59,7 @@
         }
 
         footer {
-            background: #333;
+            background: #0716f1;
             color: #fff;
             text-align: center;
             font-size: 18px;
@@ -148,79 +148,105 @@
         <h2>ABOUT</h2>
         <p>JS Mantos Construction Services is a Cebu-based construction company specializing in comprehensive design and construction solutions. It is founded and managed by Architect and Registered Master Plumber Jason R. Mantos. With professional experience in the construction industry since 2012, we provide reliable, well-rounded services to meet every client's unique needs.</p>
     </section>
+    </section>
+
+<!-- Video Section Start -->
+<section class="video-section fade-in" style="animation-delay: 0.75s; text-align: center; padding: 20px;">
+  <h2>Company Introduction Video</h2>
+  <video width="60%" controls>
+    <source src="videos/company-intro.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</section>
+<!-- Video Section End -->
+
+<section class="projects fade-in" style="animation-delay: 1s;">
     <section class="projects fade-in" style="animation-delay: 1s;">
     <h2 style="text-align: center;">OUR PROJECTS</h2>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>Project Gallery</title>
+  <link rel="stylesheet" href="gallery.css">
   <link href="https://cdn.jsdelivr.net/npm/lightbox2@2/dist/css/lightbox.min.css" rel="stylesheet">
+</head>
   <style>
     body {
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #f4f4f4;
-      margin: 0;
-      padding: 20px;
-    }
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 20px;
+  color: #333;
+}
 
-    .gallery-container {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-      justify-content: center;
-    }
+.gallery-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+}
 
-    .gallery-item {
-      background: #fff;
-      border-radius: 8px;
-      overflow: hidden;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-      transition: transform 0.3s ease;
-      width: 300px;
-    }
+.gallery-item {
+  background: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 300px;
+}
 
-    .gallery-item:hover {
-      transform: translateY(-5px);
-    }
+.gallery-item:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
 
-    .gallery-item > a img {
-      width: 100%;
-      height: auto;
-      display: block;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-      border-radius: 4px;
-    }
+.gallery-item > a img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
-    .gallery-item > a img:hover {
-      transform: scale(1.05);
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-    }
+.gallery-item > a img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
 
-    .sub-gallery {
-      display: flex;
-      gap: 10px;
-      padding: 10px;
-    }
+.sub-gallery {
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+  justify-content: center;
+}
 
-    .sub-gallery a img {
-      width: 48%;
-      height: auto;
-      border-radius: 4px;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
+.sub-gallery a img {
+  width: 48%;
+  height: auto;
+  border-radius: 6px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
-    .sub-gallery a img:hover {
-      transform: scale(1.05);
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-    }
+.sub-gallery a img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
 
-    @media (max-width: 768px) {
-      .gallery-item {
-        width: 100%;
-      }
-    }
+@media (max-width: 768px) {
+  .gallery-item {
+    width: 100%;
+  }
+
+  .sub-gallery {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sub-gallery a img {
+    width: 90%;
+  }
+}
   </style>
 </head>
 <body>
